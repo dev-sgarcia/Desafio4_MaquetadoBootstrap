@@ -1,12 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maquetando con Bootstrap</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- Animaciones  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/estilos.css">
+  <!--  Iconos  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Maquetando con Bootstrap</title>
 </head>
+
 <body>
+  <!--  ENCABEZADO  -->
+
+  <!--LOGO-->
+  <header class="container-fluid bg-white d-flex justify-content-center">
+    <img src="img/logo.png" alt="logo" width="210">
+  </header>
+
+  <!--NAV-->
+  <section>
+    <!-- class="grid_container"-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1f4b95;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item animate__animated animate__pulse">
+                <a class="nav-link active text-light" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="empresa.html">EMPRESA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="unidades.html">UNIDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="clientes.html">CLIENTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="Promociones">
+              <button class="btn btn-primary btn-primary-outline-success" type="button">Promos</button>
+            </form>
     
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <!--  CARRUSEL  -->
+
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="https://picsum.photos/1024/300?random=3" class="d-block w-100" alt="">
+      </div>
+
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://picsum.photos/1024/300?random=1" class="d-block w-100" alt="...">
+      </div>
+
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://picsum.photos/1024/300?random=6" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!--  TÍTULO  -->
+
+  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+    id="titulo">
+    <h1 class="p-3 fs-2 border-top border-3">Conoce nuestras amenidades y servicios.</h1>
+    <p class="p-3  fs-4">
+      <span class="text-primary">AG Renta.</span> Tu seguridad y diversión son lo más importante para nosotros.
+    </p>
+  </section>
+
+  <!--  IMAGENES DE SERVICIOS -->
+  <main class="grid_cabecera_container">
+    <section class="grid_img_container">
+        <div class="animate__animated animate__backInLeft">
+            <img src="https://picsum.photos/400?random=11" alt="Control de velocidad" class="galeria_img">
+        </div>
+        <div class="animate__animated animate__bounceIn">
+            <img src="https://picsum.photos/400?random=12" alt="Control de velocidad" class="galeria_img">
+        </div>
+        <div class="animate__animated animate__backInRight">
+            <img src="https://picsum.photos/400?random=13" alt="Control de velocidad" class="galeria_img">
+        </div>
+        <div class="animate__animated animate__backInLeft">
+            <img src="https://picsum.photos/400?random=14" alt="Aire acondicionado" class="galeria_img">
+        </div>
+        <div class="animate__animated animate__bounceIn">
+            <img src="https://picsum.photos/400?random=15" alt="Fondo de garantía" class="galeria_img">
+        </div>
+        <div class="animate__animated animate__backInRight">
+            <img src="https://picsum.photos/400?random=16" alt="Operadores certificados" class="galeria_img">
+        </div>
+        <div class="animate__animated animate__backInLeft">
+            <img src="https://picsum.photos/400?random=17" alt="Cinturon de seguridad" class="galeria_img">
+        </div>
+        <div class="animate__animated animate__bounceIn">
+            <img src="https://picsum.photos/400?random=18" alt="Asientos reclinables" class="galeria_img">
+        </div>
+        <div class="animate__animated animate__backInRight">
+            <img src="https://picsum.photos/400?random=19" alt="Asientos reclinables" class="galeria_img">
+        </div>
+    </section>
+</main>
+
+
+
+  <section class="w-100">
+    <div class="row w-75 mx-auto" id="servicios-fila-1">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="https://picsum.photos/200?random=20" alt="foto de playa" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Las mejores playas</h3>
+          <p class="px-4">Te llevamos a las playas más lindas de país.</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="https://picsum.photos/200?random=21" alt="foto de ciudad" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Conoce tu ciudad</h3>
+          <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="https://picsum.photos/200?random=22" alt="promociones" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Paquetes turísticos</h3>
+          <p class="px-4">Molestiae possimus quia minus nemo ratione odio ducimus</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="https://picsum.photos/200?random=23" alt="seo" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Bienvenido al blog</h3>
+          <p class="px-4">Quidem molestiae sequi facilis hic voluptatem ipsum deleniti? Tenetur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+    <p class="fs-5 px-3  pt-3">&copy 2022 Todos los derechos reservados 2022</p>    
+    <div id="iconos">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
 </body>
+
 </html>
